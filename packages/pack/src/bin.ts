@@ -1,10 +1,11 @@
 #!/usr/bin/env node
 import { cac } from 'cac';
+import pkg from '../package.json' with { type: 'json' };
 import { executeInstall } from './install.js';
 import { loadSkillsForPack } from './skills-source.js';
 import { TARGETS, getTarget, listTargetIds } from './targets/index.js';
 
-const VERSION = '0.1.0';
+const VERSION = pkg.version;
 const cli = cac('android-skills-pack');
 
 cli

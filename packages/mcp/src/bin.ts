@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 import { parseArgs } from 'node:util';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
+import pkg from '../package.json' with { type: 'json' };
 import { createServer } from './server.js';
 
-const VERSION = '0.1.0';
+const VERSION = pkg.version;
 
 const { values } = parseArgs({
   options: {
