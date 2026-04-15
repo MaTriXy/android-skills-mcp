@@ -1,6 +1,90 @@
-import type { Skill } from '@android-skills/core';
+import { frontmatter } from '@android-skills/core';
 import { describe, expect, it } from 'vitest';
 import { flattenWithReferences, singleLine } from '../src/render.js';
+import type { Skill } from '@android-skills/core';
+
+describe('frontmatter', () => {
+  it('emits a basic block', () => {
+    const out = frontmatter({ name: 'foo', value: 1, flag: true });
+    expect(out).toBe('---\nname: foo\nvalue: 1\nflag: true\n---');
+  });
+
+  it('skips undefined and null values', () => {
+    const out = frontmatter({ a: 'x', b: undefined, c: null });
+    expect(out).toBe('---\na: x\n---');
+  });
+
+  it('emits arrays as YAML lists, skips empty arrays', () => {
+    const out = frontmatter({ tags: ['x', 'y'], empty: [] });
+    expect(out).toBe('---\ntags:\n  - x\n  - y\n---');
+  });
+
+  it('uses folded scalar for multi-line strings', () => {
+    const out = frontmatter({ desc: 'line1\nline2' });
+    expect(out).toBe('---\ndesc: |-\n  line1\n  line2\n---');
+  });
+
+  it('uses folded scalar for strings over 80 chars', () => {
+    const long = 'a'.repeat(100);
+    expect(frontmatter({ desc: long })).toContain('desc: |-');
+  });
+
+  it('quotes "**" so YAML does not parse it as an alias', () => {
+    expect(frontmatter({ applyTo: '**' })).toBe('---\napplyTo: "**"\n---');
+  });
+
+  it('quotes strings starting with YAML special chars', () => {
+    expect(frontmatter({ k: '*foo' })).toBe('---\nk: "*foo"\n---');
+    expect(frontmatter({ k: '&anchor' })).toBe('---\nk: "&anchor"\n---');
+    expect(frontmatter({ k: '!tag' })).toBe('---\nk: "!tag"\n---');
+  });
+
+  it('quotes reserved YAML keywords', () => {
+    expect(frontmatter({ k: 'true' })).toBe('---\nk: "true"\n---');
+    expect(frontmatter({ k: 'false' })).toBe('---\nk: "false"\n---');
+    expect(frontmatter({ k: 'null' })).toBe('---\nk: "null"\n---');
+  });
+
+  it('quotes numeric-looking strings to keep them as strings', () => {
+    expect(frontmatter({ k: '42' })).toBe('---\nk: "42"\n---');
+    expect(frontmatter({ k: '-3.14' })).toBe('---\nk: "-3.14"\n---');
+  });
+
+  it('quotes strings with embedded ": "', () => {
+    expect(frontmatter({ k: 'foo: bar' })).toBe('---\nk: "foo: bar"\n---');
+  });
+
+  it('quotes empty string', () => {
+    expect(frontmatter({ k: '' })).toBe('---\nk: ""\n---');
+  });
+
+  it('escapes inner backslashes and quotes', () => {
+    expect(frontmatter({ k: 'has "quotes" and \\ slash *' })).toBe(
+      '---\nk: "has \\"quotes\\" and \\\\ slash *"\n---',
+    );
+  });
+
+  it('quotes glob patterns with embedded *', () => {
+    expect(frontmatter({ glob: 'src/**/*.ts' })).toBe('---\nglob: "src/**/*.ts"\n---');
+  });
+
+  it('also quotes scalar items inside arrays', () => {
+    expect(frontmatter({ tags: ['*ok', 'true', 'plain'] })).toBe(
+      '---\ntags:\n  - "*ok"\n  - "true"\n  - plain\n---',
+    );
+  });
+
+  it('handles nested objects for metadata', () => {
+    const out = frontmatter({
+      name: 'foo',
+      metadata: {
+        author: 'Google',
+        keywords: ['a', 'b'],
+      },
+    });
+    expect(out).toBe('---\nname: foo\nmetadata:\n  author: Google\n  keywords:\n    - a\n    - b\n---');
+  });
+});
 
 describe('singleLine', () => {
   it('collapses internal whitespace', () => {
