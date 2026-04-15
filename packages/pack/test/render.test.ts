@@ -1,7 +1,7 @@
 import { frontmatter } from '@android-skills/core';
+import type { Skill } from '@android-skills/core';
 import { describe, expect, it } from 'vitest';
 import { flattenWithReferences, singleLine } from '../src/render.js';
-import type { Skill } from '@android-skills/core';
 
 describe('frontmatter', () => {
   it('emits a basic block', () => {
@@ -82,7 +82,9 @@ describe('frontmatter', () => {
         keywords: ['a', 'b'],
       },
     });
-    expect(out).toBe('---\nname: foo\nmetadata:\n  author: Google\n  keywords:\n    - a\n    - b\n---');
+    expect(out).toBe(
+      '---\nname: foo\nmetadata:\n  author: Google\n  keywords:\n    - a\n    - b\n---',
+    );
   });
 });
 
