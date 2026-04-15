@@ -125,9 +125,10 @@ printf '%s\n' \
   | node packages/mcp/dist/bin.js
 ```
 
-## Find this repository useful?
 
-Support it by joining **[stargazers](https://github.com/skydoves/android-skills-mcp/stargazers)** on this repository. Also, follow **[skydoves](https://github.com/skydoves)** on GitHub for more open source projects.
+## Find this repository useful? :heart:
+Support it by joining __[stargazers](https://github.com/skydoves/android-skills-mcp/stargazers)__ for this repository. :star: <br>
+Also __[follow](https://github.com/skydoves)__ me for my next creations! 🤩
 
 ## Trademarks
 
