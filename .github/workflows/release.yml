@@ -51,13 +51,15 @@ jobs:
 
       - name: Publish android-skills-mcp
         working-directory: packages/mcp
-        run: npm publish --provenance --access public
+        # --provenance requires a public source repo; re-enable once this repo goes public
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish android-skills-pack
         working-directory: packages/pack
-        run: npm publish --provenance --access public
+        # --provenance requires a public source repo; re-enable once this repo goes public
+        run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
