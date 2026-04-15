@@ -1,6 +1,5 @@
 import { join } from 'node:path';
-import type { Skill } from '@android-skills/core';
-import { frontmatter } from '../render.js';
+import { type Skill, frontmatter } from '@android-skills/core';
 import type { RenderedFile, Target } from '../types.js';
 
 function renderSkillMd(skill: Skill): string {
@@ -10,6 +9,7 @@ function renderSkillMd(skill: Skill): string {
     description: fm.description,
     license: fm.license,
     'allowed-tools': fm.allowedTools,
+    metadata: fm.metadata,
   });
   return `${head}\n\n${skill.body.trimEnd()}\n`;
 }

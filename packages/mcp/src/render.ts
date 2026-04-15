@@ -1,4 +1,4 @@
-import type { Skill } from '@android-skills/core';
+import { type Skill, frontmatter } from '@android-skills/core';
 
 // Re-emit a SKILL.md from the parsed Skill object. Manual YAML to avoid an extra dep.
 export function rebuildSkillMarkdown(
@@ -6,29 +6,16 @@ export function rebuildSkillMarkdown(
   opts: { includeReferences?: boolean } = {},
 ): string {
   const fm = skill.frontmatter;
-  const lines: string[] = [];
-  lines.push('---');
-  lines.push(`name: ${fm.name}`);
-  // description may contain newlines — emit as a folded scalar
-  if (fm.description.includes('\n') || fm.description.length > 80) {
-    lines.push('description: |-');
-    for (const dl of fm.description.split('\n')) lines.push(`  ${dl}`);
-  } else {
-    lines.push(`description: ${fm.description}`);
-  }
-  if (fm.license) lines.push(`license: ${fm.license}`);
-  if (fm.compatibility) lines.push(`compatibility: ${fm.compatibility}`);
-  if (fm.allowedTools) lines.push(`allowed-tools: ${fm.allowedTools}`);
-  if (fm.metadata && Object.keys(fm.metadata).length > 0) {
-    lines.push('metadata:');
-    if (fm.metadata.author) lines.push(`  author: ${fm.metadata.author}`);
-    if (fm.metadata.version) lines.push(`  version: ${fm.metadata.version}`);
-    if (fm.metadata.keywords && fm.metadata.keywords.length > 0) {
-      lines.push('  keywords:');
-      for (const kw of fm.metadata.keywords) lines.push(`    - ${kw}`);
-    }
-  }
-  lines.push('---');
+  const head = frontmatter({
+    name: fm.name,
+    description: fm.description,
+    license: fm.license,
+    compatibility: fm.compatibility,
+    'allowed-tools': fm.allowedTools,
+    metadata: fm.metadata,
+  });
+
+  const lines: string[] = [head];
   lines.push('');
   lines.push(skill.body.trimEnd());
 

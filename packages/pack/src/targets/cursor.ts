@@ -1,5 +1,5 @@
-import type { Skill } from '@android-skills/core';
-import { flattenWithReferences, frontmatter, singleLine } from '../render.js';
+import { type Skill, frontmatter } from '@android-skills/core';
+import { flattenWithReferences, singleLine } from '../render.js';
 import type { RenderedFile, Target } from '../types.js';
 
 function render(skill: Skill): string {

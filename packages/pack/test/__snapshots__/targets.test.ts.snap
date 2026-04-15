@@ -30,12 +30,9 @@ name: agp-9-upgrade
 description: |-
   Upgrades, or migrates, an Android project to use Android Gradle Plugin (AGP) version 9
 license: Complete terms in LICENSE.txt
----
-
-
-## Migration guide
-
-See th",
+metadata:
+  author: Google LLC
+ ",
   "agp-9-upgrade/references/android/build/migrate-to-built-in-kotlin.md": "
 ",
   "agp-9-upgrade/references/android/build/releases/agp-9-0-0-release-notes.md": "
@@ -149,15 +146,15 @@ description: |-
 
 exports[`target 'claude-code' > output paths and sizes match snapshot 1`] = `
 [
-  "agp-9-upgrade/SKILL.md	2653B",
+  "agp-9-upgrade/SKILL.md	2827B",
   "agp-9-upgrade/references/android/build/migrate-to-built-in-kotlin.md	1B",
   "agp-9-upgrade/references/android/build/releases/agp-9-0-0-release-notes.md	1B",
   "agp-9-upgrade/references/buildconfig.md	1B",
   "agp-9-upgrade/references/ksp-kapt.md	1B",
   "agp-9-upgrade/references/paparazzi-gradle-9.md	1B",
   "agp-9-upgrade/references/recipes.md	1B",
-  "edge-to-edge/SKILL.md	14272B",
-  "migrate-xml-views-to-jetpack-compose/SKILL.md	5241B",
+  "edge-to-edge/SKILL.md	14418B",
+  "migrate-xml-views-to-jetpack-compose/SKILL.md	5415B",
   "migrate-xml-views-to-jetpack-compose/references/analysis-of-the-project-and-layout.md	1B",
   "migrate-xml-views-to-jetpack-compose/references/android/develop/ui/compose/designsystems/migrate-xml-theme-to-compose.md	1B",
   "migrate-xml-views-to-jetpack-compose/references/android/develop/ui/compose/migrate/interoperability-apis/compose-in-views.md	1B",
@@ -165,7 +162,7 @@ exports[`target 'claude-code' > output paths and sizes match snapshot 1`] = `
   "migrate-xml-views-to-jetpack-compose/references/android/develop/ui/compose/setup-compose-dependencies-and-compiler.md	1B",
   "migrate-xml-views-to-jetpack-compose/references/identify-optimal-xml-candidate.md	1B",
   "migrate-xml-views-to-jetpack-compose/references/xml-layout-migration.md	1B",
-  "navigation-3/SKILL.md	5648B",
+  "navigation-3/SKILL.md	6033B",
   "navigation-3/references/android/guide/navigation/navigation-3/index.md	1B",
   "navigation-3/references/android/guide/navigation/navigation-3/migration-guide.md	1B",
   "navigation-3/references/android/guide/navigation/navigation-3/recipes/animations.md	1B",
@@ -189,11 +186,11 @@ exports[`target 'claude-code' > output paths and sizes match snapshot 1`] = `
   "navigation-3/references/android/guide/navigation/navigation-3/recipes/scenes-listdetail.md	1B",
   "navigation-3/references/android/guide/navigation/navigation-3/recipes/scenes-twopane.md	1B",
   "navigation-3/references/android/guide/navigation/type-safe-destinations.md	1B",
-  "play-billing-library-version-upgrade/SKILL.md	5465B",
+  "play-billing-library-version-upgrade/SKILL.md	5644B",
   "play-billing-library-version-upgrade/references/android/google/play/billing/release-notes.md	1B",
   "play-billing-library-version-upgrade/references/migration-logic.md	1B",
   "play-billing-library-version-upgrade/references/version-checklist.md	1B",
-  "r8-analyzer/SKILL.md	3513B",
+  "r8-analyzer/SKILL.md	3631B",
   "r8-analyzer/references/CONFIGURATION.md	1B",
   "r8-analyzer/references/KEEP-RULES-IMPACT-HIERARCHY.md	1B",
   "r8-analyzer/references/REDUNDANT-RULES.md	1B",
