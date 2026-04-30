@@ -92,4 +92,4 @@ The server registers three tools and one resource template. See [Tools](tools.md
 | Surface | Count | Purpose |
 |---|---|---|
 | Tools | 3 | `list_skills`, `search_skills`, `get_skill` |
-| Resources | 6 | `skill://<name>` for every skill in the catalog |
+| Resources | 7 | `skill://<name>` for every skill in the catalog |

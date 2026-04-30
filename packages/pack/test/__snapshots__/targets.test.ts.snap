@@ -19,7 +19,7 @@ _Upgrades, or migrates, an Android project to use ",
 
 exports[`target 'aider' > output paths and sizes match snapshot 1`] = `
 [
-  "CONVENTIONS.md	40346B",
+  "CONVENTIONS.md	63244B",
 ]
 `;
 
@@ -40,6 +40,80 @@ description: |-
   "agp-9-upgrade/references/paparazzi-gradle-9.md": "
 ",
   "agp-9-upgrade/references/recipes.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/SKILL.md": "---
+name: display-ai-glasses-with-jetpack-compose-glimmer
+description: |-
+  Provides guidelines for developing projected applications for Android Display AI Glasses using the Jetpack Compose Glimmer U",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/design/ui/ai-glasses/guides/interaction/inputs.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/access-hardware-projected-context.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/ai-glasses/check-capabilities.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/ai-glasses/first-activity.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/ai-glasses/notifications/behavior.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/ai-glasses/notifications/start-activity.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/buttons.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/cards.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/focus.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/icons.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/text.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/title-chips.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/request-hardware-permissions.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/button-samples-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/button-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/card-samples-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/card-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/deptheffect-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/deptheffectlevels-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/glimmersansflextypography-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/glimmertheme-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/icon-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/iconbutton-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/iconsizes-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/list-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/listitem-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/liststate-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/material-hct-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/projectedcontext-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/stack-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/stackitemscope-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/stackstate-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/surface-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/titlechip-samples-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/titlechip-source.md": "
 ",
   "edge-to-edge/SKILL.md": "---
 name: edge-to-edge
@@ -137,18 +211,56 @@ description: |-
 ",
   "r8-analyzer/references/android/topic/performance/app-optimization/enable-app-optimization.md": "
 ",
+  "r8-analyzer/references/android/training/testing/other-components/ui-automator.md": "
+",
 }
 `;
 
 exports[`target 'claude-code' > output paths and sizes match snapshot 1`] = `
 [
-  "agp-9-upgrade/SKILL.md	3512B",
+  "agp-9-upgrade/SKILL.md	3514B",
   "agp-9-upgrade/references/android/build/migrate-to-built-in-kotlin.md	1B",
   "agp-9-upgrade/references/android/build/releases/agp-9-0-0-release-notes.md	1B",
   "agp-9-upgrade/references/buildconfig.md	1B",
   "agp-9-upgrade/references/ksp-kapt.md	1B",
   "agp-9-upgrade/references/paparazzi-gradle-9.md	1B",
   "agp-9-upgrade/references/recipes.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/SKILL.md	21131B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/design/ui/ai-glasses/guides/interaction/inputs.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/access-hardware-projected-context.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/ai-glasses/check-capabilities.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/ai-glasses/first-activity.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/ai-glasses/notifications/behavior.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/ai-glasses/notifications/start-activity.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/buttons.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/cards.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/focus.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/icons.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/text.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/title-chips.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/request-hardware-permissions.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/button-samples-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/button-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/card-samples-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/card-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/deptheffect-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/deptheffectlevels-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/glimmersansflextypography-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/glimmertheme-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/icon-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/iconbutton-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/iconsizes-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/list-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/listitem-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/liststate-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/material-hct-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/projectedcontext-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/stack-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/stackitemscope-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/stackstate-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/surface-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/titlechip-samples-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/titlechip-source.md	1B",
   "edge-to-edge/SKILL.md	14418B",
   "migrate-xml-views-to-jetpack-compose/SKILL.md	5415B",
   "migrate-xml-views-to-jetpack-compose/references/analysis-of-the-project-and-layout.md	1B",
@@ -186,12 +298,13 @@ exports[`target 'claude-code' > output paths and sizes match snapshot 1`] = `
   "play-billing-library-version-upgrade/references/android/google/play/billing/release-notes.md	1B",
   "play-billing-library-version-upgrade/references/migration-logic.md	1B",
   "play-billing-library-version-upgrade/references/version-checklist.md	1B",
-  "r8-analyzer/SKILL.md	3631B",
+  "r8-analyzer/SKILL.md	3621B",
   "r8-analyzer/references/CONFIGURATION.md	1B",
   "r8-analyzer/references/KEEP-RULES-IMPACT-HIERARCHY.md	1B",
   "r8-analyzer/references/REDUNDANT-RULES.md	1B",
   "r8-analyzer/references/REFLECTION-GUIDE.md	1B",
   "r8-analyzer/references/android/topic/performance/app-optimization/enable-app-optimization.md	1B",
+  "r8-analyzer/references/android/training/testing/other-components/ui-automator.md	1B",
 ]
 `;
 
@@ -201,6 +314,10 @@ exports[`target 'continue' > first 200 chars of every file match snapshot 1`] = 
 name: agp-9-upgrade
 description: |-
   Upgrades, or migrates, an Android project to use Android Gradle Plugin (AGP) version 9. Do not use this skill for migrating Kotlin Multiplatform (KMP) project",
+  "display-ai-glasses-with-jetpack-compose-glimmer.md": "---
+name: display-ai-glasses-with-jetpack-compose-glimmer
+description: |-
+  Provides guidelines for developing projected applications for Android Display AI Glasses using the Jetpack Compose Glimmer U",
   "edge-to-edge.md": "---
 name: edge-to-edge
 description: |-
@@ -226,12 +343,13 @@ description: |-
 
 exports[`target 'continue' > output paths and sizes match snapshot 1`] = `
 [
-  "agp-9-upgrade.md	3602B",
+  "agp-9-upgrade.md	3604B",
+  "display-ai-glasses-with-jetpack-compose-glimmer.md	22870B",
   "edge-to-edge.md	14252B",
   "migrate-xml-views-to-jetpack-compose.md	5761B",
   "navigation-3.md	7466B",
   "play-billing-library-version-upgrade.md	5609B",
-  "r8-analyzer.md	3763B",
+  "r8-analyzer.md	3828B",
 ]
 `;
 
@@ -248,6 +366,18 @@ applyTo: "**"
 
 See the [AGP 9 migration guide](references/android/build/releases/agp-9-0-0-release-notes.md) for the major changes, many
 breaking, in AGP ",
+  "display-ai-glasses-with-jetpack-compose-glimmer.instructions.md": "---
+applyTo: "**"
+---
+
+# display-ai-glasses-with-jetpack-compose-glimmer
+
+
+## Glossary
+
+| Term | Definition |
+|---|---|
+| **AI Glasses** | All-day wear, hands-free devices that provide access to infor",
   "edge-to-edge.instructions.md": "---
 applyTo: "**"
 ---
@@ -305,12 +435,13 @@ applyTo: "**"
 
 exports[`target 'copilot' > output paths and sizes match snapshot 1`] = `
 [
-  "agp-9-upgrade.instructions.md	3415B",
+  "agp-9-upgrade.instructions.md	3417B",
+  "display-ai-glasses-with-jetpack-compose-glimmer.instructions.md	22374B",
   "edge-to-edge.instructions.md	13924B",
   "migrate-xml-views-to-jetpack-compose.instructions.md	5270B",
   "navigation-3.instructions.md	7058B",
   "play-billing-library-version-upgrade.instructions.md	5426B",
-  "r8-analyzer.instructions.md	3445B",
+  "r8-analyzer.instructions.md	3510B",
 ]
 `;
 
@@ -320,6 +451,9 @@ exports[`target 'cursor' > first 200 chars of every file match snapshot 1`] = `
 description: |-
   Upgrades, or migrates, an Android project to use Android Gradle Plugin (AGP) version 9. Do not use this skill for migrating Kotlin Multiplatform (KMP) projects.
 alwaysApply: fals",
+  "display-ai-glasses-with-jetpack-compose-glimmer.mdc": "---
+description: |-
+  Provides guidelines for developing projected applications for Android Display AI Glasses using the Jetpack Compose Glimmer UI toolkit. This skill covers foundational Glimmer desi",
   "edge-to-edge.mdc": "---
 description: |-
   Use this skill to migrate your Jetpack Compose app to add adaptive edge-to-edge support and troubleshoot common issues. Use this skill to fix UI components (like buttons or lists",
@@ -342,12 +476,13 @@ description: |-
 
 exports[`target 'cursor' > output paths and sizes match snapshot 1`] = `
 [
-  "agp-9-upgrade.mdc	3582B",
+  "agp-9-upgrade.mdc	3584B",
+  "display-ai-glasses-with-jetpack-compose-glimmer.mdc	22816B",
   "edge-to-edge.mdc	14233B",
   "migrate-xml-views-to-jetpack-compose.mdc	5718B",
   "navigation-3.mdc	7447B",
   "play-billing-library-version-upgrade.mdc	5566B",
-  "r8-analyzer.mdc	3745B",
+  "r8-analyzer.mdc	3810B",
 ]
 `;
 
@@ -367,7 +502,7 @@ _Upgrades, or migrates,",
 
 exports[`target 'gemini' > output paths and sizes match snapshot 1`] = `
 [
-  "styleguide.md	40373B",
+  "styleguide.md	63271B",
 ]
 `;
 
@@ -388,6 +523,80 @@ description: |-
   "agp-9-upgrade/references/paparazzi-gradle-9.md": "
 ",
   "agp-9-upgrade/references/recipes.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/SKILL.md": "---
+name: display-ai-glasses-with-jetpack-compose-glimmer
+description: |-
+  Provides guidelines for developing projected applications for Android Display AI Glasses using the Jetpack Compose Glimmer U",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/design/ui/ai-glasses/guides/interaction/inputs.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/access-hardware-projected-context.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/ai-glasses/check-capabilities.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/ai-glasses/first-activity.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/ai-glasses/notifications/behavior.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/ai-glasses/notifications/start-activity.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/buttons.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/cards.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/focus.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/icons.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/text.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/title-chips.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/request-hardware-permissions.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/button-samples-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/button-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/card-samples-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/card-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/deptheffect-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/deptheffectlevels-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/glimmersansflextypography-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/glimmertheme-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/icon-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/iconbutton-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/iconsizes-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/list-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/listitem-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/liststate-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/material-hct-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/projectedcontext-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/stack-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/stackitemscope-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/stackstate-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/surface-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/titlechip-samples-source.md": "
+",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/titlechip-source.md": "
 ",
   "edge-to-edge/SKILL.md": "---
 name: edge-to-edge
@@ -485,18 +694,56 @@ description: |-
 ",
   "r8-analyzer/references/android/topic/performance/app-optimization/enable-app-optimization.md": "
 ",
+  "r8-analyzer/references/android/training/testing/other-components/ui-automator.md": "
+",
 }
 `;
 
 exports[`target 'junie' > output paths and sizes match snapshot 1`] = `
 [
-  "agp-9-upgrade/SKILL.md	3338B",
+  "agp-9-upgrade/SKILL.md	3340B",
   "agp-9-upgrade/references/android/build/migrate-to-built-in-kotlin.md	1B",
   "agp-9-upgrade/references/android/build/releases/agp-9-0-0-release-notes.md	1B",
   "agp-9-upgrade/references/buildconfig.md	1B",
   "agp-9-upgrade/references/ksp-kapt.md	1B",
   "agp-9-upgrade/references/paparazzi-gradle-9.md	1B",
   "agp-9-upgrade/references/recipes.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/SKILL.md	20908B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/design/ui/ai-glasses/guides/interaction/inputs.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/access-hardware-projected-context.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/ai-glasses/check-capabilities.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/ai-glasses/first-activity.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/ai-glasses/notifications/behavior.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/ai-glasses/notifications/start-activity.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/buttons.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/cards.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/focus.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/icons.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/text.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/jetpack-compose-glimmer/title-chips.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/android/develop/xr/jetpack-xr-sdk/request-hardware-permissions.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/button-samples-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/button-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/card-samples-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/card-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/deptheffect-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/deptheffectlevels-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/glimmersansflextypography-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/glimmertheme-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/icon-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/iconbutton-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/iconsizes-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/list-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/listitem-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/liststate-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/material-hct-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/projectedcontext-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/stack-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/stackitemscope-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/stackstate-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/surface-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/titlechip-samples-source.md	1B",
+  "display-ai-glasses-with-jetpack-compose-glimmer/references/titlechip-source.md	1B",
   "edge-to-edge/SKILL.md	14272B",
   "migrate-xml-views-to-jetpack-compose/SKILL.md	5241B",
   "migrate-xml-views-to-jetpack-compose/references/analysis-of-the-project-and-layout.md	1B",
@@ -534,11 +781,12 @@ exports[`target 'junie' > output paths and sizes match snapshot 1`] = `
   "play-billing-library-version-upgrade/references/android/google/play/billing/release-notes.md	1B",
   "play-billing-library-version-upgrade/references/migration-logic.md	1B",
   "play-billing-library-version-upgrade/references/version-checklist.md	1B",
-  "r8-analyzer/SKILL.md	3513B",
+  "r8-analyzer/SKILL.md	3503B",
   "r8-analyzer/references/CONFIGURATION.md	1B",
   "r8-analyzer/references/KEEP-RULES-IMPACT-HIERARCHY.md	1B",
   "r8-analyzer/references/REDUNDANT-RULES.md	1B",
   "r8-analyzer/references/REFLECTION-GUIDE.md	1B",
   "r8-analyzer/references/android/topic/performance/app-optimization/enable-app-optimization.md	1B",
+  "r8-analyzer/references/android/training/testing/other-components/ui-automator.md	1B",
 ]
 `;

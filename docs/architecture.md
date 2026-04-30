@@ -48,7 +48,7 @@ The body is scanned for `^#{1,6} ` headings and for relative markdown links poin
 | `description` | 2 | Frontmatter description |
 | `headings` | 1 | All `^#{1,6} ` headings from the body |
 
-BM25 ranks results. Prefix matching and 20% fuzzy matching are enabled, so partial words and minor typos still match. The index is built once at server startup and held in memory. With six skills and a few hundred terms, the build takes around 10 ms.
+BM25 ranks results. Prefix matching and 20% fuzzy matching are enabled, so partial words and minor typos still match. The index is built once at server startup and held in memory. With seven skills and a few hundred terms, the build takes around 10 ms.
 
 The choice of BM25 over embedding based search is deliberate. The catalog is small, the keywords are curated, and the queries are short. BM25 produces better top hits in this regime than dense embeddings, with no model download, no warm up, and no native deps. If the catalog grows past a few hundred skills or if telemetry shows that BM25 misses real queries, embeddings would be a justified upgrade.
 
@@ -85,10 +85,10 @@ The test pyramid:
 
 | Layer | Tests | What it covers |
 |---|---|---|
-| `@android-skills/core` | 15 | Parser against all 6 real skills, schema invariants, search ranking |
+| `@android-skills/core` | 34 | Parser against all 7 real skills, schema invariants, search ranking |
 | `android-skills-mcp` | 9 | In-memory MCP transport: `list_skills`, `search_skills`, `get_skill`, resources |
-| `android-skills-pack` | 40 | Per-target snapshot tests (paths, sizes, head 200 chars), install lifecycle |
+| `android-skills-pack` | 64 | Per-target snapshot tests (paths, sizes, head 200 chars), install lifecycle |
 
-Total 64 tests, all running in around 1.5 seconds. The tests parse the actual upstream `skills/` directory rather than fixtures, so any upstream change that breaks the parser surfaces immediately.
+Total 107 tests, all running in around 1.5 seconds. The tests parse the actual upstream `skills/` directory rather than fixtures, so any upstream change that breaks the parser surfaces immediately.
 
 The MCP server tests use the `InMemoryTransport.createLinkedPair()` helper to wire a server and a client in the same process, so the assertions go through the real MCP protocol stack without spawning subprocesses.

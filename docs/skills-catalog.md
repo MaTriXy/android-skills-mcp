@@ -1,6 +1,6 @@
 # Skill Catalog
 
-The current snapshot bundled in both packages contains six skills from upstream `android/skills`. The catalog grows as upstream adds more.
+The current snapshot bundled in both packages contains seven skills from upstream `android/skills`. The catalog grows as upstream adds more.
 
 ## build
 
@@ -53,6 +53,14 @@ References include the full release notes, migration logic, and a version checkl
 Use this skill to migrate your Jetpack Compose app to add adaptive edge to edge support and troubleshoot common issues.
 
 Covers fixing UI components (like buttons or lists) that are obscured by or overlapping with the navigation bar or status bar, fixing IME insets, and fixing system bar legibility. This is the only skill in the current catalog that is fully self contained (no external references).
+
+## xr
+
+### `display-ai-glasses-with-jetpack-compose-glimmer`
+
+Provides guidelines for developing projected applications for Android Display AI Glasses using the Jetpack Compose Glimmer UI toolkit.
+
+Covers foundational Glimmer design principles, GlimmerTheme styling tokens (GlimmerColors, GlimmerTypography, GlimmerShapes), the Projected Activity model that runs on a host device and projects UI to connected glasses, hardware permission handling, notifications behavior, and the Glimmer component set: buttons, cards, focus, icons, text, title chips, and more. Includes the source for every Glimmer primitive and the projected context API as inlineable references.
 
 ## How to refresh
 

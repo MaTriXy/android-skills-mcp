@@ -7,12 +7,13 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const SKILLS_ROOT = resolve(__dirname, '../../../skills');
 
 describe('loadSkills against real android/skills', () => {
-  it('finds all 6 known skills', async () => {
+  it('finds all 7 known skills', async () => {
     const skills = await loadSkills(SKILLS_ROOT);
     const names = skills.map((s) => s.name).sort();
     expect(names).toEqual(
       [
         'agp-9-upgrade',
+        'display-ai-glasses-with-jetpack-compose-glimmer',
         'edge-to-edge',
         'migrate-xml-views-to-jetpack-compose',
         'navigation-3',
@@ -30,7 +31,7 @@ describe('loadSkills against real android/skills', () => {
       expect(s.frontmatter.metadata.author).toBe('Google LLC');
       expect(Array.isArray(s.keywords)).toBe(true);
       expect(s.keywords.length).toBeGreaterThan(0);
-      expect(s.category).toMatch(/^(build|jetpack-compose|navigation|performance|play|system)$/);
+      expect(s.category).toMatch(/^(build|jetpack-compose|navigation|performance|play|system|xr)$/);
     }
   });
 
