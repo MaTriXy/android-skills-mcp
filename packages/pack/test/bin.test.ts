@@ -16,20 +16,20 @@ function run(...args: string[]): string {
 }
 
 describe.skipIf(!existsSync(BIN))('bin (built)', () => {
-  it('list shows all 7 skills and 7 targets', () => {
+  it('list shows all 9 skills and 7 targets', () => {
     const out = run('list');
-    expect(out).toContain('Skills (7):');
+    expect(out).toContain('Skills (9):');
     expect(out).toContain('Targets (7):');
     expect(out).toContain('agp-9-upgrade');
     expect(out).toContain('cursor');
   });
 
-  it('install --target cursor writes 7 .mdc files', () => {
+  it('install --target cursor writes 9 .mdc files', () => {
     const tmp = mkdtempSync(join(tmpdir(), 'pack-bin-'));
     try {
       run('install', '--target', 'cursor', '--cwd', tmp);
       const files = readdirSync(join(tmp, '.cursor', 'rules'));
-      expect(files.filter((f) => f.endsWith('.mdc'))).toHaveLength(7);
+      expect(files.filter((f) => f.endsWith('.mdc'))).toHaveLength(9);
     } finally {
       rmSync(tmp, { recursive: true, force: true });
     }

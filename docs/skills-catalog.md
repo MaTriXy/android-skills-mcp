@@ -1,6 +1,14 @@
 # Skill Catalog
 
-The current snapshot bundled in both packages contains seven skills from upstream `android/skills`. The catalog grows as upstream adds more.
+The current snapshot bundled in both packages contains nine skills from upstream `android/skills`. The catalog grows as upstream adds more.
+
+## android-cli
+
+### `android-cli`
+
+Orchestrates Android development tasks including project creation, deployment, SDK management, and environment diagnostics using the `android` command-line tool.
+
+Covers SDK install/update/remove, project scaffolding from templates, app run/install on devices and emulators, and CLI environment diagnostics. References cover device interaction (`screen capture`, `screen resolve`, `layout`) and journey test execution.
 
 ## build
 
@@ -11,6 +19,14 @@ Upgrades, or migrates, an Android project to use Android Gradle Plugin (AGP) ver
 Covers the migration from older AGP versions: built in Kotlin support, BuildConfig changes, KSP/KAPT differences, the Paparazzi adjustments for Gradle 9, and the recipes for fixing common breakages.
 
 References include AGP 9.0.0 release notes, the migrate-to-built-in-Kotlin guide, BuildConfig docs, KSP/KAPT docs, the Paparazzi notes, and the recipe collection.
+
+## camera
+
+### `camera1-to-camerax`
+
+Use this skill to migrate legacy Android camera implementations (Camera1 or raw Camera2 APIs) to CameraX.
+
+CameraX is a lifecycle-aware Jetpack library built on top of Camera2 that resolves camera rotation issues and handles device dependencies. Covers dependency setup (1.3.0+ for interop, 1.5.0+ for Compose extensions), permission handling, lifecycle binding, PreviewView integration, image capture, and the Compose extensions path.
 
 ## jetpack-compose
 

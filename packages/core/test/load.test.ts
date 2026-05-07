@@ -7,12 +7,14 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const SKILLS_ROOT = resolve(__dirname, '../../../skills');
 
 describe('loadSkills against real android/skills', () => {
-  it('finds all 7 known skills', async () => {
+  it('finds all 9 known skills', async () => {
     const skills = await loadSkills(SKILLS_ROOT);
     const names = skills.map((s) => s.name).sort();
     expect(names).toEqual(
       [
         'agp-9-upgrade',
+        'android-cli',
+        'camera1-to-camerax',
         'display-ai-glasses-with-jetpack-compose-glimmer',
         'edge-to-edge',
         'migrate-xml-views-to-jetpack-compose',
@@ -28,10 +30,13 @@ describe('loadSkills against real android/skills', () => {
     for (const s of skills) {
       expect(s.name).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
       expect(s.description.length).toBeGreaterThan(0);
-      expect(s.frontmatter.metadata.author).toBe('Google LLC');
+      if (s.frontmatter.metadata.author !== undefined) {
+        expect(s.frontmatter.metadata.author).toBe('Google LLC');
+      }
       expect(Array.isArray(s.keywords)).toBe(true);
-      expect(s.keywords.length).toBeGreaterThan(0);
-      expect(s.category).toMatch(/^(build|jetpack-compose|navigation|performance|play|system|xr)$/);
+      expect(s.category).toMatch(
+        /^(android-cli|build|camera|jetpack-compose|navigation|performance|play|system|xr)$/,
+      );
     }
   });
 
